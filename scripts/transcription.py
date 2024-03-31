@@ -61,10 +61,10 @@ class DeepGramTranscription(Transcription):
                         transcription_complete.set()
 
             async def on_metadata(self, metadata, **kwargs):
-                print(f"\n\n{metadata}\n\n")
+                print(f"")
 
             async def on_error(self, error, **kwargs):
-                print(f"\n\n{error}\n\n")
+                print(f"")
 
             dg_connection.on(LiveTranscriptionEvents.Transcript, on_message)
             dg_connection.on(LiveTranscriptionEvents.Metadata, on_metadata)

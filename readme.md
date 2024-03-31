@@ -10,6 +10,9 @@ Install the required dependencies and ensure you have the following environment 
 - DEEPGRAM_API_KEY
 - OPENAI_API_KEY
 
+Please don't forget install in your machine the next platform: 
+```ffmpeg```
+
 ```bash
 # Example installation steps
 git clone https://github.com/JoseChipanaTica/voice-agent.git

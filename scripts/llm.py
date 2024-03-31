@@ -1,5 +1,4 @@
 from langchain_openai import ChatOpenAI
-import random
 from langchain_core.tools import tool
 from langchain import hub
 from langchain.agents import AgentExecutor, create_openai_functions_agent
@@ -9,8 +8,9 @@ import webbrowser
 
 @tool
 async def open_a_linkedin() -> str:
+    """Open a LinkedIn Profile"""
     webbrowser.open("https://www.linkedin.com/in/jchipana/")
-    return random.choice("LinkedIn opened")
+    return "LinkedIn opened"
 
 
 class Agent:
