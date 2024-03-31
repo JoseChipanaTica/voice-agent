@@ -7,7 +7,7 @@ import webbrowser
 
 
 @tool
-async def open_a_linkedin() -> str:
+async def open_linkedin() -> str:
     """Open a LinkedIn Profile"""
     webbrowser.open("https://www.linkedin.com/in/jchipana/")
     return "LinkedIn opened"
@@ -20,7 +20,7 @@ class Agent:
 
     async def streaming(self, query: str):
         prompt = hub.pull("hwchase17/openai-tools-agent")
-        tools = [open_a_linkedin]
+        tools = [open_linkedin]
 
         chat = ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo", streaming=True)
 

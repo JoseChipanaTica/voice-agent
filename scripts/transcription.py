@@ -12,8 +12,7 @@ import asyncio
 
 class TranscriptCollector:
     def __init__(self):
-        self.transcript_parts = None
-        self.reset()
+        self.transcript_parts = []
 
     def reset(self):
         self.transcript_parts = []
