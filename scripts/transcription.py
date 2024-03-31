@@ -81,6 +81,7 @@ class DeepGramTranscription(Transcription):
             )
 
             await dg_connection.start(options)
+
             microphone = Microphone(dg_connection.send)
             microphone.start()
 
