@@ -1,8 +1,12 @@
+from dotenv import load_dotenv
+
 import asyncio
 from scripts.transcription import TranscriptCollector, DeepGramTranscription
 from scripts.llm import Agent
 from scripts.speak import DeepGramSpeak
 from utils.colors import Colors
+
+load_dotenv()
 
 speak = DeepGramSpeak()
 agent = Agent(speak)
